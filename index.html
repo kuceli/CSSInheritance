@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Inheritance</title>
+    <style>
+      #likes-list {
+        color: orange;
+      }
+      #dislikes-list {
+        color: aqua;
+      }
+      li {
+        color: blue;
+      }
+      .likes-items {
+        color: purple;
+      }
+      .dislikes-items {
+        color: green;
+      }
+      #likes-items2,
+      #likes-items3,
+      #dislikes-items1,
+      #dislikes-items2 {
+        color: brown;
+      }
+      ol li {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <ol id="likes-list" class="likes-list">
+      Likes
+      <li id="likes-items1" class="likes-items">Eating Good Food</li>
+      <li id="likes-items2" class="likes-items">Listening to Music</li>
+      <li id="likes-items3" class="likes-items" style="color: red">Skincare</li>
+    </ol>
+    <ul id="dislikes-list" class="dislikes-list">
+      Dislikes
+      <li id="dislikes-items1" class="dislikes-items" style="color: red">
+        Closed Spaces
+      </li>
+      <li id="dislikes-items2" class="dislikes-items">Cooking</li>
+      <li id="dislikes-items3" class="dislikes-items">
+        Dirty/Untidy Environment
+      </li>
+    </ul>
+  </body>
+</html>
